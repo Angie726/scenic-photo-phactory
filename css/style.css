@@ -157,8 +157,11 @@ color: #ffffff;
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
+        padding: 10px 5%;
     }
 
     .hero {
