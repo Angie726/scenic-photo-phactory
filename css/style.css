@@ -155,100 +155,67 @@ color: #ffffff;
     padding: 30px 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .service-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .gallery-section {
+        padding: 50px 20px;
+    }
+
+    .gallery-section h2 {
+        font-size: 1.8rem;
+    }
 }
 
-.nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url('../images/hero.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-content {
-    max-width: 850px;
-    color: #ffffff;
-}
-
-.slogan {
-    color: #d4af37;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.gallery-section {
-    padding: 80px 8%;
-    background: #f7f7f7;
-    text-align: center;
-}
-
-.gallery-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #111111;
-}
-
-.gallery-section p {
-    color: #666666;
-    margin-bottom: 40px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.gallery-card {
-    background: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.gallery-card:hover {
-    transform: translateY(-6px);
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    background: #dddddd;
-}
-
-.gallery-card h3 {
-    padding: 20px;
-    color: #111111;
-}
-
-.gallery-card .btn {
-    display: inline-block;
-    margin: 0 20px 20px;
-}
-}
