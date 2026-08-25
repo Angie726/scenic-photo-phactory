@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | Scenic Photo Phactory</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -20,93 +22,172 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="photography.html">Photography</a></li>
+                <li><a href="events.html">Events & Video</a></li>
                 <li><a href="printing.html">Printing</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="events.html">Events & Videos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
     </header>
 
-    <!-- Contact Section -->
-    <section class="services">
-        <h2>Contact Scenic Photo Phactory</h2>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out to us for bookings, enquiries or any questions.</p>
+        </div>
+    </section>
 
-        <div class="service-grid">
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="contact-info-grid">
 
-            <div class="service-card">
-                <h3>Get in Touch</h3>
+            <div class="contact-info-card">
+                <h3>📞 Call Us</h3>
+                <p><a href="tel:+254715131620">0715 131 620</a></p>
+                <p><a href="tel:+254715131620">+254 715 131 620</a></p>
+            </div>
 
-                <p><strong>Phone / WhatsApp:</strong> 0715 131 620</p>
-                <p><strong>Email:</strong> info@scenicphotophactory.com</p>
-                <p><strong>Opening Hours:</strong> Monday – Sunday, 8:00 AM – 6:00 PM</p>
-
-                <br>
-
-                <a href="tel:+254715131620" class="btn gold">Call Now</a>
-                <br><br>
+            <div class="contact-info-card">
+                <h3>💬 WhatsApp</h3>
+                <p><a href="https://wa.me/254715131620" target="_blank">0715 131 620</a></p>
                 <a href="https://wa.me/254715131620" class="btn whatsapp" target="_blank">Chat on WhatsApp</a>
             </div>
 
-            <div class="service-card">
-                <h3>Send an Enquiry</h3>
+            <div class="contact-info-card">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:info@scenicphotophactory.com">info@scenicphotophactory.com</a></p>
+            </div>
 
-                <form>
+            <div class="contact-info-card">
+                <h3>🕐 Opening Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
 
-                    <label>Full Name</label><br>
-                    <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin-bottom:15px;">
+        </div>
+    </section>
 
-                    <label>Phone Number</label><br>
-                    <input type="tel" placeholder="07XXXXXXXX" required style="width:100%; padding:10px; margin-bottom:15px;">
+    <!-- Enquiry Form -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <p>Fill in the form below and we'll get back to you within 24 hours.</p>
 
-                    <label>Service Required</label><br>
-                    <select style="width:100%; padding:10px; margin-bottom:15px;">
-                        <option>Photography</option>
-                        <option>Printing</option>
-                        <option>Branding</option>
-                        <option>Videography</option>
-                        <option>Other</option>
+            <form action="#" method="POST" class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="branch">Preferred Branch</label>
+                    <select id="branch" name="branch">
+                        <option value="">Select a branch...</option>
+                        <option value="juja">Juja City Mall</option>
+                        <option value="makongeni">Makongeni Business Park</option>
+                        <option value="donholm">Donholm - Naivas Eastgate</option>
+                        <option value="buruburu">Buruburu - The Point Mall</option>
                     </select>
+                </div>
 
-                    <label>Your Message</label><br>
-                    <textarea rows="5" placeholder="Tell us what you need..." style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service...</option>
+                        <option value="photography">Photography</option>
+                        <option value="events">Events & Video</option>
+                        <option value="printing">Printing</option>
+                        <option value="branding">Branding</option>
+                        <option value="documents">Document Services</option>
+                        <option value="gifts">Personalised Gifts</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-                    <button type="submit" class="btn gold">Send Enquiry</button>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or enquiry..."></textarea>
+                </div>
 
-                </form>
-            </div>
+                <button type="submit" class="btn gold">Send Message</button>
 
+            </form>
         </div>
+    </section>
 
-        <br><br>
-
+    <!-- Branches Section -->
+    <section class="branches-section">
         <h2>Our Branches</h2>
+        <p>Visit us at any of our convenient locations across Nairobi.</p>
 
-        <div class="service-grid">
+        <div class="branches-grid">
 
-            <div class="service-card">
-                <h3>Juja City Mall</h3>
-                <p>2nd Floor, Juja City Mall</p>
+            <!-- Branch 1: Juja -->
+            <div class="branch-card">
+                <h3>🏬 Juja City Mall</h3>
+                <p><strong>Location:</strong> Juja City Mall, 2nd Floor</p>
+                <p><strong>Phone:</strong> 0715 131 620</p>
+                <a href="https://maps.google.com/maps?q=Juja+City+Mall" class="btn outline" target="_blank">View on Google Maps</a>
             </div>
 
-            <div class="service-card">
-                <h3>Makongeni Branch</h3>
-                <p>Makongeni Business Park, next to Merclare Hotel, entrance at Rubis Petrol Station</p>
+            <!-- Branch 2: Makongeni -->
+            <div class="branch-card">
+                <h3>🏢 Makongeni Business Park</h3>
+                <p><strong>Location:</strong> Next to Merclare Hotel, entrance at Rubis Petrol Station</p>
+                <p><strong>Phone:</strong> 0715 131 620</p>
+                <a href="https://maps.google.com/maps?q=Makongeni+Business+Park" class="btn outline" target="_blank">View on Google Maps</a>
             </div>
 
-            <div class="service-card">
-                <h3>Donholm Branch</h3>
-                <p>Naivas Eastgate, Donholm</p>
+            <!-- Branch 3: Donholm -->
+            <div class="branch-card">
+                <h3>🛍️ Donholm - Naivas Eastgate</h3>
+                <p><strong>Location:</strong> Naivas Eastgate, Donholm</p>
+                <p><strong>Phone:</strong> 0715 131 620</p>
+                <a href="https://maps.google.com/maps?q=Naivas+Eastgate+Donholm" class="btn outline" target="_blank">View on Google Maps</a>
             </div>
 
-            <div class="service-card">
-                <h3>Buruburu Branch</h3>
-                <p>The Point Mall, Buruburu</p>
+            <!-- Branch 4: Buruburu -->
+            <div class="branch-card">
+                <h3>🛒 Buruburu - The Point Mall</h3>
+                <p><strong>Location:</strong> The Point Mall, Buruburu</p>
+                <p><strong>Phone:</strong> 0715 131 620</p>
+                <a href="https://maps.google.com/maps?q=The+Point+Mall+Buruburu" class="btn outline" target="_blank">View on Google Maps</a>
             </div>
 
         </div>
+    </section>
 
+    <!-- Google Maps Embed -->
+    <section class="map-section">
+        <h2>Find Us on Google Maps</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853743783!2d36.68219672266113!3d-1.3028611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1710000000000" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
     </section>
 
     <!-- Footer -->
