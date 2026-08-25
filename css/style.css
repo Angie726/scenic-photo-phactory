@@ -718,12 +718,290 @@ a {
 .map-container iframe {
     display: block;
 }
+/* =========================
+   ABOUT PAGE
+========================= */
 
+/* Placeholder Image */
+.about-story-image .placeholder-image {
+    background: #0b0b0b;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    color: #d4af37;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-story-image .placeholder-image span {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.about-story-image .placeholder-image p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.about-story-image .placeholder-image small {
+    color: #888888;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+/* Placeholder Avatar */
+.placeholder-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    border: 3px solid #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 15px;
+}
+
+/* Our Story */
+.about-story {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 20px 40px;
+}
+
+.about-story-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-story-text h2 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-story-text p {
+    color: #555555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Mission Section */
+.about-mission-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.about-mission-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mission-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mission-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    color: #d4af37;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.mission-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.mission-card ul li {
+    color: #555555;
+    font-size: 0.95rem;
+    padding: 5px 0;
+    line-height: 1.6;
+}
+
+/* Why Choose Us */
+.about-why-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+}
+
+.about-why-section h2 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.why-card h3 {
+    color: #111111;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.about-team-section {
+    background: #0b0b0b;
+    color: #ffffff;
+    padding: 60px 20px 80px;
+}
+
+.about-team-section h2 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-team-section > p {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.about-team-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.team-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #d4af37;
+}
+
+.team-card h3 {
+    color: #d4af37;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
 /* =========================
    RESPONSIVE BREAKPOINTS
 ========================= */
 
 @media (max-width: 900px) {
+    .about-story-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .about-story-image img{
+        height: 300px;
+    }
+    .about-mission-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-why-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-team-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .contact-info-grid{
         grid-template-columns: repeat(2, 1frl);
     }
@@ -744,6 +1022,45 @@ a {
 }
 
 @media (max-width: 600px) {
+    .about-story-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .about-story-text h2{
+        font-size: 1.8rem;
+    }
+    .about-story-text p{
+        font-size: o.95;
+    }
+    .about-story-image img{
+        height: 200px;
+    }
+    .about-mission-grid{
+        grid-template-columns: 1fr;
+    }
+    .about-why-grid{
+        grid-template-columns: 1fr;
+    }
+    .about-team-grid{
+        grid-template-columns: 1fr;
+    }
+    .mission-card{
+        padding: 20px 15px;
+    }
+    .why-card{
+        padding: 20px 15px;
+    }
+    .team-card{
+        padding: 20px 15px;
+    }
+    .team-card img{
+        width: 100px;
+        height: 100px;
+    }
+    .cta-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
     .contact-info-grid{
         grid-template-columns: 1fr;
     }
