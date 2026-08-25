@@ -16,4 +16,21 @@ document.addEventListener('DOMContentLoaded',
             }
         });
     });
-    
+
+    // Hamburger Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            // Change hamburger to X when open
+            if (navLinks.classList.contains('active')) {
+                menuToggle.textContent = '✕'; // X symbol
+            } else {
+                menuToggle.textContent = '☰'; // Hamburger symbol
+            }
+        });
+    }
+});

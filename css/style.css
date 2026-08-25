@@ -90,6 +90,9 @@ a {
     width: 100%;
     max-width: 850px;
     color: #ffffff;
+    margin:0 auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .slogan {
@@ -444,10 +447,39 @@ a {
 
     .menu-toggle {
         display: block;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 5px 10px;
+        z-index: 1001;
     }
 
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #0b0b0b;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+        border-top: 1px solid #d4af37;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-links a:hover {
+        color:#d4af37
     }
 }
 
