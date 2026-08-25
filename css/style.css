@@ -84,6 +84,8 @@ a {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .hero-content {
@@ -93,6 +95,8 @@ a {
     margin:0 auto;
     padding: 0 20px;
     text-align: center;
+    position: relative;
+    top: 0;
 }
 
 .slogan {
@@ -104,7 +108,7 @@ a {
 
 .hero h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .hero p {
